@@ -65,7 +65,7 @@ def calc_tf_idf(txt,idf):
    
     rough_tfidf=list(col)
     for keys in word_count.keys():
-        tf_idf[keys]=round(idf[keys]*word_count[keys],3)
+        tf_idf[keys]=idf[keys]*word_count[keys]
         if keys in rough_tfidf:
             index=rough_tfidf.index(keys)
             rough_tfidf[index]=tf_idf[keys]
