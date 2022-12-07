@@ -3,33 +3,23 @@
 
 <head>
   <title>BBC News Classification</title>
-  <script>
-    function Storage() {
-        if (typeof(Storage) !== "undefined") {
-            sessionStorage.setItem("course", "HI");
-            document.getElementById("textid").innerHTML =
-                sessionStorage.getItem("course");
-        } else {
-            document.getElementById("textid").innerHTML =
-                "The browser does not support Web Storage.";
-        }
-    }
-</script>
+  <link rel="stylesheet" href="/static/style/design.css">
+  <link rel = "icon" href = "/static/BBCLogo.png" type = "image/x-icon">
 </head>
 
 <body>
   <div>
     <center>
-    BBC News Classification
+    <img src="/static/BBCLogo.png" height="80" width="120">
     </center>
   </div>
   <center>
   <form method="POST" onsubmit=submit()>
     <textarea  id="textid" name="news" rows="20" cols="50"> {{value2}}</textarea>
     <br>
-    <input type="submit" name="Classify" >
+    <input type="submit" value="CLASSIFY" >
 </form>
-<span style="font-family:Arial;font-size:10pt">
+<span style="font-family:Arial;font-size:15pt">
   {{value}}
 <span>
 </center>
