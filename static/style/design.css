@@ -1,0 +1,82 @@
+body,
+p,
+div,
+ul,
+li,
+span,
+input {
+  margin: 0px;
+  padding: 0px
+}
+body {
+  margin: 0px;
+  color: #FFFFFD;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  background-color: #E7E8E1;
+}
+#topnav {
+  background-color: black
+  /*#7a0000*/
+  ;
+  width: 100%;
+  height: 41px;
+}
+.page-width {
+  width: 1268px;
+  margin: 0px auto;
+}
+#topnav-logo {
+  padding: 5.5px 14px 2px 0px;
+  float: left;
+  border-right: 1px solid #666666;
+}
+#topnav-signin {
+  font-stretch: semi-expanded;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 1px 87px 13px 13px;
+  border-right: 1px solid #666666
+  /*black*/
+  ;
+  float: left;
+}
+#topnav-signin img {
+  position: relative;
+  top: 7px;
+  padding-right: 1px;
+}
+#topnav-menu {
+  float: left;
+}
+#topnav-menu li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 13px 20px 12px 20px;
+  border-right: 1px solid #666666;
+  float: left;
+}
+#topnav-menu ul li span {
+  position: relative;
+  top: 1px;
+  padding-left: 57px;
+  
+}
+#topnav-search {
+  float: left;
+  padding: 0px 0px 2px 18px;
+}
+#topnav-search input {
+  padding-top: 0px;
+  padding-left: 7px;
+  height: 24px;
+  width: 143px;
+  font-weight: 600;
+  color: black;
+  border: none;
+  vertical-align: middle
+}
+#topnav-search img {
+  position: relative;
+  top: 8px;
+}
