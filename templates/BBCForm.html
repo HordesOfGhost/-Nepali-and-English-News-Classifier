@@ -3,46 +3,35 @@
 
 <head>
   <title>BBC News Classification</title>
-    <link rel="stylesheet" href="static/style/design.css">
+  <script>
+    function Storage() {
+        if (typeof(Storage) !== "undefined") {
+            sessionStorage.setItem("course", "HI");
+            document.getElementById("textid").innerHTML =
+                sessionStorage.getItem("course");
+        } else {
+            document.getElementById("textid").innerHTML =
+                "The browser does not support Web Storage.";
+        }
+    }
+</script>
 </head>
 
 <body>
-  <div id="container">
-    <div id="topnav">
-      <div class="page-width">
-        <div id="topnav-logo">
-          
-        </div>
-        <div id="topnav-signin">
-          <p>
-            <img src="static/BBClogo.PNG" height="25" width="25">
-        </div>
-        <div id="topnav-menu">
-            
-          <ul>
-            <li>News</li>
-            <li>Sport</li>
-            <li>Weather</li>
-            <li>Shop</li>
-            <li>Earth</li>
-            <li>Travel</li>
-            <li>Capital</li>
-            <li>Culture</li>
-            <li>More<span>&#9654</span>
-            </li>
-          </ul>
-        </div>
-        <div id="topnav-search">
-          <input type="text" placeholder="Search" />
-          <img src="images/search.PNG" />
-        </div>
-      </div>
-    </div>
+  <div>
+    <center>
+    BBC News Classification
+    </center>
   </div>
-  <form method="POST">
-    <textarea  name="news" rows="40" cols="100"> Classify News </textarea>
-    <input type="submit" name="Classify">
+  <center>
+  <form method="POST" onsubmit=submit()>
+    <textarea  id="textid" name="news" rows="20" cols="50"> {{value2}}</textarea>
+    <br>
+    <input type="submit" name="Classify" >
 </form>
+<span style="font-family:Arial;font-size:10pt">
+  {{value}}
+<span>
 </center>
 </body>
 </html>

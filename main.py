@@ -9,10 +9,11 @@ def bbc_form():
     return render_template('BBCForm.html')
 
 @app.route('/', methods=['POST'])
-def bbc_form_post():
+def recieve_text():
     text = request.form['news']
     prediction=Predict_news(text)
-    return prediction
+    return render_template("BBCForm.html",value=prediction,value2=text)
+
 
 
 if __name__=='__main__':
