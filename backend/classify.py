@@ -17,13 +17,14 @@ def count_word(word):
     return cnt
 
 def Predict_news(news):
-    if not news[0:10].isascii():
+    txt=news
+    if not news[0:20].isascii():
         conv = LanguageTranslation()
-        txt= conv.to_english(news[0:(len(news)/2)])
+        txt= conv.to_english(news)
         txt=' '.join(txt)
     text=ProcessText(txt)
-    tf_idf=calc_tf_idf(txt,idf) 
-    if all(i <.05 for i in tf_idf) or count_word(news)<100:
+    tf_idf=calc_tf_idf(text,idf) 
+    if all(i <.05 for i in tf_idf) or count_word(news)<50:
         return("You cannot classify this text.")
     else:
         tf_idf_2=calc_tf_idf(" ",idf)
