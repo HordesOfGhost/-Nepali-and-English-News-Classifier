@@ -10,10 +10,8 @@ Classification Based On Lists
 <li> Tech </li>
 </ul>
 
-<h2>Classifying Nepali Entertainment News</h2><br>
-
+<h2>Classifying Nepali Entertainment News</h2>
 <img src="https://user-images.githubusercontent.com/85671929/207860687-d222b6e3-10b2-42eb-a276-4345a8d1ad83.png">
-<h2><center>Classifying English Tech News</center></h2>
-![Screenshot (968)]
+<h2>Classifying English Tech News</h2>
 <img src="https://user-images.githubusercontent.com/85671929/207860720-53fd5c15-7772-411f-b933-f7e07ccf6b4f.png">
  
