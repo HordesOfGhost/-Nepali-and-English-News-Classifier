@@ -1,6 +1,6 @@
 # News-Classifier
-Small Web application to classify News
-Can Classify news on Language English and Nepali
+Small Web application to classify News<br>
+Can Classify news on Language English and Nepali<br>
 Classification Based On Lists
 <ul>
 <li> Business </li>
