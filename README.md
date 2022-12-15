@@ -9,7 +9,7 @@ Classification Based On Lists
 <li> Sports </li>
 <li> Tech </li>
 </ul>
-
+<h1>Examples</h1>
 <h2>Classifying Nepali Entertainment News</h2>
 <img src="https://user-images.githubusercontent.com/85671929/207860687-d222b6e3-10b2-42eb-a276-4345a8d1ad83.png">
 <h2>Classifying English Tech News</h2>
