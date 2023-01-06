@@ -11,8 +11,8 @@ def bbc_form():
 @app.route('/', methods=['POST'])
 def recieve_text():
     text = request.form['news']
-    prediction=Predict_news(text)
-    return render_template("BBCForm.html",value=prediction,value2=text)
+    prediction,confidence=Predict_news(text)
+    return render_template("BBCForm.html",prediction=prediction,confidence=confidence,text=text)
 
 
 
